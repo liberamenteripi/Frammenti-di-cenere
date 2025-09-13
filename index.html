@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
   <meta charset="utf-8">
   <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: #f4e1c1; /* colore sabbia */
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      max-width: 400px;
+      width: 90%;
+    }
+    .container img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    input[type="password"] {
+      padding: 10px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #c19a6b; /* marrone chiaro */
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #a37d50; /* più scuro al passaggio */
+    }
+  </style>
   <script>
     function checkPassword() {
       var password = document.getElementById("password").value;
-      if (password === "costellazione") { 
-        window.location.href = "https://earth.google.com/web/data=MkEKPwo9CiExQWxZRDc4eEJOXzhoWHRHNlY1a2F4LXd5d0RPandIcmgSFgoUMEMzQ0E3RDZGNjM5Rjk3QkU5NDYgAUICCABKBwinteleEAE?authuser=1"; // pagina protetta
+      if (password === "costellazione") {
+        window.location.href = "https://earth.google.com/web/data=MkEKPwo9CiExQWxZRDc4eEJOXzhoWHRHNlY1a2F4LXd5d0RPandIcmgSFgoUMEMzQ0E3RDZGNjM5Rjk3QkU5NDYgAUICCABKBwinteleEAE?authuser=1";
       } else {
         alert("Password errata!");
       }
@@ -15,8 +64,13 @@
   </script>
 </head>
 <body>
-  <h2>Inserisci la password per entrare</h2>
-  <input type="password" id="password" placeholder="Password">
-  <button onclick="checkPassword()">Entra</button>
+  <div class="container">
+    <!-- 🔗 Qui metti il link della tua immagine -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon-72a7cf.svg/512px-Star_icon-72a7cf.svg.png" alt="Logo">
+
+    <h2>Inserisci la password per entrare</h2>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="checkPassword()">Entra</button>
+  </div>
 </body>
 </html>
