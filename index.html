@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      if (password === "costellazione") { 
+        window.location.href = "pagina.html"; // pagina protetta
+      } else {
+        alert("Password errata!");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Inserisci la password per entrare</h2>
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="checkPassword()">Entra</button>
+</body>
+</html>
