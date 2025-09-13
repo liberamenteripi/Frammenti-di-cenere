@@ -10,15 +10,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: Arial, sans-serif;
-      background: #f4e1c1; /* colore sabbia */
+      font-family: "Times New Roman", serif;
+      font-style: italic; /* corsivo */
+      background: url("https://www.publicdomainpictures.net/pictures/320000/velka/parchment-paper.jpg") no-repeat center center fixed;
+      background-size: cover; /* sfondo pergamena */
     }
     .container {
       text-align: center;
-      background: white;
+      background: rgba(255, 255, 255, 0.8); /* bianco trasparente per leggibilità */
       padding: 40px 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       max-width: 400px;
       width: 90%;
     }
@@ -37,19 +39,21 @@
       border-radius: 6px;
       margin-bottom: 15px;
       font-size: 16px;
+      font-style: italic;
     }
     button {
       padding: 10px 20px;
-      background-color: #c19a6b; /* marrone chiaro */
+      background-color: #8b5e3c; /* marrone pergamena */
       color: white;
       border: none;
       border-radius: 6px;
       cursor: pointer;
       font-size: 16px;
       transition: background 0.3s;
+      font-style: italic;
     }
     button:hover {
-      background-color: #a37d50; /* più scuro al passaggio */
+      background-color: #6d4528;
     }
   </style>
   <script>
@@ -65,7 +69,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- 🔗 Logo caricato su GitHub -->
+    <!-- 🔗 Logo -->
     <img src="timbro-caccia.jpeg" alt="Logo">
 
     <h2>Inserisci la password per entrare</h2>
