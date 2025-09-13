@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Pagina protetta</title>
 </head>
 <body>
   <h1>Benvenuto nella pagina segreta!</h1>
   <p>Qui trovi il progetto di Google Earth:</p>
-  <a href="https://drive.google.com/file/d/XXXXXXXX/view?usp=sharing" target="_blank">
+  <a href="https://drive.google.com/file/d/1Hq-8KddNq0ZKtj4AdIosdKW96RX1UX8w/view?usp=drive_link">
     🌍 Apri il progetto Google Earth
   </a>
 </body>
