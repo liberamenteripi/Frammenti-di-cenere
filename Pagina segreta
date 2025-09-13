@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagina protetta</title>
+</head>
+<body>
+  <h1>Benvenuto nella pagina segreta!</h1>
+  <a href="https://example.com">👉 Link riservato</a>
+</body>
+</html>
