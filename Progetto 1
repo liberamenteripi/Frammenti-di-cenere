@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      if (password === "pereiopodio") {
+        window.location.href = "pagina.html"; // pagina protetta
+      } else {
+        alert("Password errata!");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Inserisci la password</h2>
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="checkPassword()">Entra</button>
+</body>
+</html>
